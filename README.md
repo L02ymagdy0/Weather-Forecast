@@ -11,4 +11,5 @@ A sleek, responsive web application that provides real-time weather updates and 
 
 ## 🛠️ Tech Stack
 * **Frontend:** HTML5, CSS3, JavaScript (ES6+)
+* **Icons:** Font Awesome
 * **API:** [WeatherAPI](https://www.weatherapi.com/)

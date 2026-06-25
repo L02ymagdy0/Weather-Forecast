@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+<link rel="stylesheet" href="src/css/all.min.css">    <link rel="stylesheet" href="./src/css/output.css">
+</head><link rel="stylesheet" href="src/css/input.css">
+<body class="bg-slate-900">
+ 
+    <header class="flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between py-4 px-4 lg:px-30 border-b border-white/10 bg-slate/5">
+        <div class="logo flex items-center gap-2"> 
+            <a href="#"><img class="w-10" src="src/images/cloudy.png"></a>
+            <div class="pp  ">
+                <h1 class="text-white ">Weather</h1>
+                <p class="text-gray-500">stay ahead of the forecst</p>
+            </div>
+        </div>
+        <ul class="flex flex-wrap items-center justify-center gap-4 text-white ">
+            <li class="border rounded-2xl px-2 py-1 text-slate-400"><a href="#">Home</a></li>
+            <li class="md:px-5 hover:text-slate-400"><a href="#">News</a></li>
+            <li class="md:px-5 hover:text-slate-400"><a href="#">Contact</a></li>
+            <li class="md:px-5 hover:text-slate-400"><a href="#">About</a></li>
+        </ul>
+    </header>
+
+    <main class="px-4 py-5 lg:px-30 mt-7 shadow-2xl">
+
+        <input id="searchInput" class="w-full text-gray-500 border border-b border-white/10 py-2 px-8 rounded-2xl relative focus:border-slate-400 outline-0" type="text" placeholder="Find your location">
+   
+        <div class="div my-4 grid grid-cols-4 gap-2 sm:gap-4 py-3">
+            
+            <div class="card bg-white/10 col-span-2 items-center p-2 sm:p-4 rounded-xl">
+                <h2 class="my-2 sm:my-4 bg-white/10 text-teal-400 text-[10px] sm:text-xs font-medium w-fit px-2 py-1 sm:py-2 rounded-xl">Now</h2>
+                <p id="city"  class="text-white text-sm sm:text-base">cairo</p>
+                <div class="my-3 stats flex justify-between items-center w-full md:w-1/2">
+                    <h3 id="nowDegree" class="text-3xl sm:text-6xl font-bold text-white">15°</h3>   
+                    <img id="nowImg" class="w-10 h-12 sm:w-14 sm:h-18" id="nowImg" src="src/images/cloudy.png " alt="">
+                </div>
+                <span id="status" class="text-teal-400 text-xs sm:text-sm">clear</span>
+                <div class="info my-4 flex flex-wrap justify-between w-full md:w-3/5 gap-1 sm:gap-2 items-center text-xs sm:text-sm text-white">
+                    <div><i class="fas fa-droplet"></i> <span id="humidity" class="ml-1">20%</span></div>
+                    <div><i class="fas fa-wind"></i> <span id="wind" class="ml-1">18km/h</span></div>
+                    <div><i class="fas fa-compass"></i> <span  id="direction" class="ml-1">East</span></div>
+                </div>
+            </div>
+
+            <div class="card2 col-span-1 bg-white/10 flex flex-col items-center p-2 sm:p-6 text-white rounded-xl">
+                <p  class="nextDayDate items-center px-1 py-2 text-teal-400 text-[10px] sm:text-sm whitespace-nowrap">thu 28 apr</p>
+                <img  class=" nextDayImg w-10 h-12 sm:w-14 sm:h-18"  src="src/images/cloudy.png " alt="" >
+                <div class="NextMaxTemp text-lg sm:text-2xl font-bold mt-2">55.1<span>°</span></div>
+                <div class="NextMinTemp text-xs sm:text-sm opacity-60 mb-2 sm:mb-4"><span>°</span></div>
+                <span class="nextDaystatuss text-teal-400 text-xs sm:text-sm mt-auto"></span>
+            </div>
+
+           <div class="card3 col-span-1 bg-white/10 flex flex-col items-center p-2 sm:p-6 text-white rounded-xl">
+                <p  class="nextDayDate items-center px-1 py-2 text-teal-400 text-[10px] sm:text-sm whitespace-nowrap">thu 28 apr</p>
+                <img  class=" nextDayImg w-10 h-12 sm:w-14 sm:h-18"  src="src/images/cloudy.png " alt="" >
+                <div class="NextMaxTemp text-lg sm:text-2xl font-bold mt-2">55.1<span>°</span></div>
+                <div class="NextMinTemp text-xs sm:text-sm opacity-60 mb-2 sm:mb-4">18<span>°</span></div>
+                <span class="nextDaystatuss text-teal-400 text-xs sm:text-sm mt-auto">c</span>
+            </div>
+
+        </div>
+    </main>
+    <footer class="px-16 text-center  py-6 text-gray-500 text-sm border-t border-white/10 mt-auto"
+        <p>&copy;2026 Weather. All rights reserved.</p>
+    </footer>
+    <script src="./src/JS/main.js"></script>
+</body>
+</html>
